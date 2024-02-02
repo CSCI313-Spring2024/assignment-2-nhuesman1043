@@ -30,18 +30,16 @@
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     overflow-x: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 #name {
-    animation: slideInFromLeft 1s ease-out;
+    animation: slideInFromLeft 1.5s ease-out;
 }
 
 @keyframes slideInFromLeft {
@@ -55,7 +53,7 @@
 
 #major{
     color: #D9D9D9;
-    animation: slideInFromRight 1s ease-out;
+    animation: slideInFromRight 1.5s ease-out;
 }
 
 @keyframes slideInFromRight {
@@ -68,7 +66,7 @@
 }
 
 #about-page {
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 #paragraph-title {
@@ -77,6 +75,7 @@
 
 #paragraph-body {
     padding-left: 8%;
+    line-height: 1.6;
 }
 
 #self-portrait{
@@ -88,23 +87,15 @@
 }
 
 #schedule-page {
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
-/* Remove below here */
 #favorites-page {
-    height: 70vh;
-    border: solid purple;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
-#left {
-    border: solid beige;
-}
-
-#middle {
-    border: solid red;
-}
-
-#right {
-    border: solid salmon;
+.list-group-item {
+    background-color: #222222;
+    font-size: x-large;
 }
