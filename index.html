@@ -4,6 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Huesman's Website</title>
@@ -38,104 +39,170 @@
     </nav>
     
     <!--Home Page-->
-    <div class="container-fluid" id="home-page">
-        <div id="name">
-            <span>Hi, I'm Noah Huesman</span>
+    <div id="home-page">
+        <div class="display-1">
+            <p id="name">Hi, I'm Noah Huesman</p>
         </div>
-        <div id="major">
-            <span>My Field of Study is Software Engineering</span>
-        </div>
-    </div>
-
-    <!--About Page-->
-    <div class="container-fluid" id="about-page">
-        <div class="container-fluid" id="bio">
-            <p class="lead" id="paragraph-title">A Short Autobiography:</p>
-            <p id="paragraph-body">
-                Throughout my childhood, I always had an increasing fascination in computers. 
-                When my freshman year of highschool rolled around, I had finally saved up enough money from working 
-                my Summer job at a greenhouse to buy all the parts needed for building my very own personal computer.
-                It was then that I truly discovered my life's passion. After some time, I graduated high school and began 
-                working at Marvin Windows. This was also a critical point in my life as another interest of mine was uncovered.
-                While I started as a Production Associate at Marvin, about a year later I moved into the position of Systems Automation Intern.
-                This experience opened my eyes to a whole new world of possibilities, combining my technical skills with an understanding of production processes.
-                Today, these two chapters of my life have converged in my career aspirations. I envision a future where I leverage this unique blend to create impactful production-facing web applications.
-            </p>
-        </div>
-        <div class="container-fluid" id="portrait">
-            <img src="./images/self-portrait.png" class="img-fluid rounded mx-auto d-block" id="self-portrait" alt="Self-portrait">
+        <div class="display-4">
+            <p id="major">My Field of Study is Software Engineering</p>
         </div>
     </div>
 
-    <!--Schedule Page-->
-    <div class="container-fluid" id="schedule-page">
-        <div id="schedule-title">
-            <span class="span"><strong>My Weekly Schedule:</strong></span>
+    <!--Main Content-->
+    <div class="container-fluid" id="main-content">
+        <!--About Page-->
+        <div class="container-fluid align-middle" id="about-page">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="display-6" id="paragraph-title">A Short Autobiography:</p>
+                    <p class="text-xxl" id="paragraph-body">
+                    Throughout my childhood, I always had an increasing fascination in computers. 
+                    When my freshman year of highschool rolled around, I had finally saved up enough money from working 
+                    my Summer job at a greenhouse to buy all the parts needed for building my very own personal computer.
+                    It was then that I truly discovered my life's passion. After some time, I graduated high school and began 
+                    working at Marvin Windows. This was also a critical point in my life as another interest of mine was uncovered.
+                    While I started as a Production Associate at Marvin, about a year later I moved into the position of Systems Automation Intern.
+                    This experience opened my eyes to a whole new world of possibilities, combining my technical skills with an understanding of production processes.
+                    Today, these two chapters of my life have converged in my career aspirations. I envision a future where I leverage this unique blend to create impactful production-facing web applications.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/self-portrait.png" class="img-fluid rounded mx-auto d-block" id="self-portrait" alt="Self-portrait">
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="table-responsive"> 
-            <table class="table table-bordered table-dark" id="schedule">
-                <thead>
-                    <tr>
-                        <th scope="col">Time</th>
-                        <th scope="col">Monday</th>
-                        <th scope="col">Tuesday</th>
-                        <th scope="col">Wednesday</th>
-                        <th scope="col">Thursday</th>
-                        <th scope="col">Friday</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">9:00 am</th>
-                            <td>Meeting</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10:00 am</th>
-                            <td>Project Work</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11:00 am</th>
-                            <td>Training</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12:00 pm</th>
-                            <td>Lunch</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1:00 pm</th>
-                            <td>Project Presentation</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2:00 pm</th>
-                            <td>Client Call</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3:00 pm</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">4:00 pm</th>
-                            <td>Project Work</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5:00 pm</th>
-                            <td>Client Call</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6:00 pm</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">7:00 pm</th>
-                            <td>Project Work</td>
-                        </tr>
-                    </tbody>
-                </table>      
-        </div>  
-    </div>
 
-    <!--Favorites Page-->
-    <div id="favorites-page">
+        <hr>
 
+        <!--Schedule Page-->
+        <div class="container-fluid text-center" id="schedule-page">
+            <div class="display-5">
+                <p><strong>My Weekly Schedule:</strong></p>
+            </div>
+            <br>
+            <div class="table-responsive"> 
+                <table class="table table-bordered table-dark border rounded border-white mx-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10:00 am</th>
+                                <td>CSCI366: Database Systems</td>
+                                <td></td>
+                                <td>CSCI366: Database Systems</td>
+                                <td></td>
+                                <td>CSCI366: Database Systems</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11:00 am</th>
+                                <td>End CSCI366 (10:50 am)</td>
+                                <td>ENGL321: Technical Writing</td>
+                                <td>End CSCI366 (10:50 am)</td>
+                                <td>ENGL321: Technical Writing</td>
+                                <td>End CSCI366 (10:50 am)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12:00 pm</th>
+                                <td>Work (12:30 pm)</td>
+                                <td>End ENGL321 (12:15 pm)</td>
+                                <td>Work (12:30 pm)</td>
+                                <td>End ENGL321 (12:15 pm)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1:00 pm</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2:00 pm</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3:00 pm</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4:00 pm</th>
+                                <td>End Work (4:30 pm)</td>
+                                <td>End Work (4:30 pm)</td>
+                                <td>End Work (4:30 pm)</td>
+                                <td>End Work (4:30 pm)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5:00 pm</th>
+                                <td>ECE374: Computer Organization (5:40 pm)</td>
+                                <td>ECE374: Computer Organization (5:40 pm)</td>
+                                <td>ECE374: Computer Organization (5:40 pm)</td>
+                                <td>ECE374: Computer Organization (5:40 pm)</td>
+                                <td>ECE374: Computer Organization (5:40 pm)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6:00 pm</th>
+                                <td>End ECE374 (6:40 pm)</td>
+                                <td>End ECE374 (6:40 pm)</td>
+                                <td>End ECE374 (6:40 pm)</td>
+                                <td>End ECE374 (6:40 pm)</td>
+                                <td>End ECE374 (6:40 pm)</td>
+                            </tr>
+                        </tbody>
+                    </table>      
+            </div>  
+        </div>
+
+        <hr>
+
+        <!--Favorites Page-->
+        <div class="container-fluid" id="favorites-page">
+            <div class="row">
+                <div class="display-5 text-center" id="title">
+                    <p><strong>Favorites of Mine:</strong></p>
+                </div>
+                <div class="col-md-4" id="left">
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+                <div class="col-md-4" id="middle">
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div class="col-md-4" id="right">
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
