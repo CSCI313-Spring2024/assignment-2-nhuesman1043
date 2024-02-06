@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Huesman's Website</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home-page">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-page">
+                        <i class="fas fa-user"></i> About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule-page">
+                        <i class="far fa-calendar-alt"></i> My Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#favorites-page">
+                        <i class="fas fa-heart"></i> Favorites
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Home Page-->
+    <div class="text-center" id="home-page">
+        <div class="display-2">
+            <p id="name">Hi, I'm Noah Huesman</p>
+        </div>
+        <div class="display-5">
+            <p id="major">I'm Currently Studying Software Engineering</p>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div class="container-fluid" id="main-content">
+        <!--About Page-->
+        <div class="container-fluid align-middle" id="about-page">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="display-6" id="paragraph-title">A Short Autobiography:</p>
+                    <p class="text-xl" id="paragraph-body">
+                    Throughout my childhood, I always had an increasing fascination with computers. 
+                    When my freshman year of highschool rolled around, I had finally saved up enough money from working 
+                    my Summer job at a greenhouse to buy all the parts needed for building my very own personal computer.
+                    It was then that I truly discovered my life's passion. After some time, I graduated high school and began 
+                    working at Marvin Windows. This was also a critical point in my life as another interest of mine was uncovered.
+                    While I started as a Production Associate at Marvin, about a year later I moved into the position of Systems Automation Intern.
+                    This experience opened my eyes to a whole new world of possibilities, combining my technical skills with an understanding of production processes.
+                    Today, these two chapters of my life have converged in my career aspirations. I envision a future where I leverage this unique blend to create impactful production-facing web applications.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/self-portrait.png" class="img-fluid rounded mx-auto d-block" id="self-portrait" alt="Self-portrait">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--Schedule Page-->
+        <div class="container-fluid text-center" id="schedule-page">
+            <div class="display-5">
+                <p><strong>My Weekly Schedule:</strong></p>
+            </div>
+            <br>
+            <div class="table-responsive"> 
+                <table class="table table-bordered table-dark border rounded border-white mx-auto" style="max-width: 2100px;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">8:00 am</th>
+                                <td></td>
+                                <td>ECE374: Computer Organization Lab</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9:00 am</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10:00 am</th>
+                                <td>CSCI366: Database Systems</td>
+                                <td>End ECE374 Lab</td>
+                                <td>CSCI366: Database Systems</td>
+                                <td></td>
+                                <td>CSCI366: Database Systems</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11:00 am</th>
+                                <td>End CSCI366 (10:50)</td>
+                                <td>ENGL321: Technical Writing</td>
+                                <td>End CSCI366 (10:50)</td>
+                                <td>ENGL321: Technical Writing</td>
+                                <td>End CSCI366 (10:50)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12:00 pm</th>
+                                <td>Work (12:30)</td>
+                                <td>End ENGL321 (12:15)</td>
+                                <td>Work (12:30)</td>
+                                <td>End ENGL321 (12:15)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1:00 pm</th>
+                                <td></td>
+                                <td>Work (1:30)</td>
+                                <td></td>
+                                <td>Work (1:30)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2:00 pm</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3:00 pm</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4:00 pm</th>
+                                <td>End Work (4:30)</td>
+                                <td>End Work (4:30)</td>
+                                <td>End Work (4:30)</td>
+                                <td>End Work (4:30)</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5:00 pm</th>
+                                <td>ECE374: Computer Organization (5:40)</td>
+                                <td>ECE374: Computer Organization (5:40)</td>
+                                <td>ECE374: Computer Organization (5:40)</td>
+                                <td>ECE374: Computer Organization (5:40)</td>
+                                <td>ECE374: Computer Organization (5:40)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6:00 pm</th>
+                                <td>End ECE374 (6:40)</td>
+                                <td>End ECE374 (6:40)</td>
+                                <td>End ECE374 (6:40)</td>
+                                <td>End ECE374 (6:40)</td>
+                                <td>End ECE374 (6:40)</td>
+                            </tr>
+                        </tbody>
+                    </table>      
+            </div>  
+        </div>
+        <hr>
+
+        <!--Favorites Page-->
+        <div class="container-fluid" id="favorites-page">
+            <div class="row">
+                <div class="display-4 text-center" id="title">
+                    <p><strong>Favorites of Mine:</strong></p>
+                </div>
+                <div class="col-md-4" id="left">
+                    <p class="text-center display-5" style="color: #D9D9D9; padding-top: 20px;">Sites:</p>
+                    <hr>
+                    <ul class="list-group text-center">
+                        <li class="list-group-item"><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
+                        <li class="list-group-item"><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li class="list-group-item"><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
+                        <li class="list-group-item"><a href="https://coolors.co/" target="_blank">Coolors</a></li>
+                        <li class="list-group-item"><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center display-5" style="color: #D9D9D9; padding-top: 20px;">Movies:</p>
+                    <hr>
+                    <ul style="font-size: x-large;">
+                        <li>Borat</li>
+                        <li>Star Wars: Empire Strikes Back</li>
+                        <li>Spiderman: No Way Home</li>
+                        <li>Jurassic Park</li>
+                        <li>IT</li>
+                        <li>Deadpool</li>
+                        <li>Avengers: Infinity War</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center display-5" style="color: #D9D9D9; padding-top: 20px;">Hobbies:</p>
+                    <hr>
+                    <ol style="font-size: x-large;">
+                        <li>Hanging Out With Girlfriend</li>
+                        <li>Playing Video Games</li>
+                        <li>Hanging Out With Friends</li>
+                        <li>Weightlifting</li>
+                        <li>Going to the Lake</li>
+                        <li>Working on Personal Software Projects</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="bg-dark text-white p-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Contact Information:</h1>
+                    <p>Email: Noah.Huesman@gmail.com</p>
+                    <p>Phone: (701) 866-0998</p>
+                </div>
+                <div class="col-md-6">
+                    <h1>Follow Me:</h1>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/noah-huesman-6272121bb/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/nhuesman1043/" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
